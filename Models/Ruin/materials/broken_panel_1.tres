@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b6kda8ja8t7cw"]
+
+[ext_resource type="Texture2D" uid="uid://sew4vjfvixbk" path="res://Models/ruin/ruins_cracked_panel_1_standardSurface1_BaseColor.png" id="1_r07p1"]
+
+[resource]
+resource_name = "broken_panel_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_r07p1")
+roughness = 0.552786

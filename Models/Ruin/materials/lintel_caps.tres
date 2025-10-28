@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dtrvp2dkuwet6"]
+
+[ext_resource type="Texture2D" uid="uid://qesxtn4nbylk" path="res://Models/ruin/ruins_lintel_cap_standardSurface1_BaseColor.png" id="1_wn5aw"]
+
+[resource]
+resource_name = "lintel_caps"
+cull_mode = 2
+albedo_texture = ExtResource("1_wn5aw")
+roughness = 0.552786

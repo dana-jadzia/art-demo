@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cadyanulkicoh"]
+
+[ext_resource type="Texture2D" uid="uid://dl6t6wppgqpyo" path="res://Models/ruin/ruins_combined_floor_standardSurface1_BaseColor.png" id="1_4mku3"]
+
+[resource]
+resource_name = "combined_tiles"
+cull_mode = 2
+albedo_texture = ExtResource("1_4mku3")
+metallic_specular = 0.0

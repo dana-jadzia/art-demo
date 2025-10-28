@@ -1,0 +1,138 @@
+[gd_scene load_steps=16 format=3 uid="uid://vxtya6hwbh7a"]
+
+[ext_resource type="PackedScene" uid="uid://d2ylf4uqv87n3" path="res://Models/Character/character.glb" id="2_hmy61"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_n8woo"]
+radius = 0.17822266
+height = 1.5098877
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_a766l"]
+animation = &"backflip_action"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_n8woo"]
+animation = &"faling"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_hmy61"]
+animation = &"idle_001"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_iw4a2"]
+animation = &"walk_001"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_a766l"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_iw4a2"]
+xfade_time = 0.2
+advance_mode = 2
+advance_expression = "velocity.length() > 0.2"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_mpnxl"]
+xfade_time = 0.2
+advance_mode = 2
+advance_expression = "velocity.length() < 0.2"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_n8woo"]
+xfade_time = 0.2
+advance_mode = 2
+advance_expression = "!is_on_floor()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_hmy61"]
+advance_mode = 2
+advance_expression = "is_on_floor()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_uqer1"]
+xfade_time = 0.2
+break_loop_at_end = true
+advance_mode = 2
+advance_expression = "is_flipping == true"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_c4hc3"]
+xfade_time = 0.2
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_mpnxl"]
+states/End/position = Vector2(1632.6667, 146.66667)
+states/Start/position = Vector2(190.66667, 129.33333)
+states/backflip_action/node = SubResource("AnimationNodeAnimation_a766l")
+states/backflip_action/position = Vector2(648.88885, 81.99997)
+states/faling/node = SubResource("AnimationNodeAnimation_n8woo")
+states/faling/position = Vector2(342, 518.6666)
+states/idle_001/node = SubResource("AnimationNodeAnimation_hmy61")
+states/idle_001/position = Vector2(459.99997, 280)
+states/walk_001/node = SubResource("AnimationNodeAnimation_iw4a2")
+states/walk_001/position = Vector2(762.6667, 544.6666)
+transitions = ["Start", "idle_001", SubResource("AnimationNodeStateMachineTransition_a766l"), "idle_001", "walk_001", SubResource("AnimationNodeStateMachineTransition_iw4a2"), "walk_001", "idle_001", SubResource("AnimationNodeStateMachineTransition_mpnxl"), "walk_001", "faling", SubResource("AnimationNodeStateMachineTransition_n8woo"), "faling", "idle_001", SubResource("AnimationNodeStateMachineTransition_hmy61"), "idle_001", "backflip_action", SubResource("AnimationNodeStateMachineTransition_uqer1"), "backflip_action", "idle_001", SubResource("AnimationNodeStateMachineTransition_c4hc3")]
+graph_offset = Vector2(0, 15.305762)
+
+[sub_resource type="LabelSettings" id="LabelSettings_n8woo"]
+font_size = 24
+
+[node name="character" instance=ExtResource("2_hmy61")]
+
+[node name="Skeleton" parent="." index="0"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Skeleton3D" parent="Skeleton" index="0"]
+bones/0/position = Vector3(6.898278e-11, 1.7224863, -0.07918501)
+bones/0/rotation = Quaternion(-0.19745916, -1.2123196e-07, 2.6045349e-08, 0.9803111)
+bones/1/rotation = Quaternion(0.23961495, 1.2168252e-07, -3.030542e-08, 0.9708681)
+bones/2/rotation = Quaternion(0.02845778, 1.19160354e-07, 3.4311283e-09, 0.999595)
+bones/3/rotation = Quaternion(-0.20373449, 0.004342473, -0.0009037234, 0.9790162)
+bones/4/rotation = Quaternion(0.1331102, -0.0043961545, 0.0005904329, 0.9910913)
+bones/5/rotation = Quaternion(-0.4618151, 0.48578474, 0.5701167, 0.4750863)
+bones/6/rotation = Quaternion(-0.4724944, 0.54024833, 0.1525614, 0.67941576)
+bones/7/rotation = Quaternion(0.045596235, -0.0012479358, -0.53321177, 0.84475124)
+bones/24/rotation = Quaternion(0.461815, 0.48578486, 0.5701168, -0.47508618)
+bones/25/rotation = Quaternion(-0.4961056, -0.42288703, -0.016233528, 0.7581441)
+bones/26/rotation = Quaternion(0.039233036, 0.0013119117, 0.45830095, 0.88792974)
+bones/43/position = Vector3(6.898278e-11, 1.7224863, -0.07918501)
+bones/43/rotation = Quaternion(0.7209739, 0.47153878, 0.47153866, -0.18841201)
+bones/44/rotation = Quaternion(-0.17708844, -0.41161314, 0.46533236, 0.763335)
+bones/45/rotation = Quaternion(-0.083884664, 0.0041615823, -0.0012493031, 0.996466)
+bones/46/rotation = Quaternion(0.5892997, -0.05548047, 0.031007748, 0.8054106)
+bones/47/rotation = Quaternion(0.1334977, -0.020960504, 0.10125765, 0.9856398)
+bones/48/position = Vector3(6.8982785e-11, 1.7224863, -0.07918501)
+bones/48/rotation = Quaternion(0.7209739, -0.4715388, -0.47153872, -0.1884119)
+bones/49/rotation = Quaternion(-0.17709033, 0.41161433, -0.46533123, 0.76333463)
+bones/50/rotation = Quaternion(-0.08387976, -0.0041614133, 0.0012492603, 0.99646646)
+bones/51/rotation = Quaternion(0.58929956, 0.05548031, -0.031007791, 0.80541086)
+bones/52/rotation = Quaternion(0.13349766, 0.020960292, -0.10125772, 0.9856398)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7567049, 0)
+shape = SubResource("CapsuleShape3D_n8woo")
+
+[node name="SpringArmPivot" type="Node3D" parent="." index="3"]
+
+[node name="SpringArm3D" type="SpringArm3D" parent="SpringArmPivot" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4779315, 0)
+spring_length = 1.5
+
+[node name="Camera3D" type="Camera3D" parent="SpringArmPivot/SpringArm3D" index="0"]
+
+[node name="AnimationTree" type="AnimationTree" parent="." index="4"]
+tree_root = SubResource("AnimationNodeStateMachine_mpnxl")
+advance_expression_base_node = NodePath("..")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="6"]
+
+[node name="Label" type="Label" parent="CanvasLayer" index="0"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -219.0
+offset_top = -182.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "ASWD: Movement
+Space: Jump
+F: Backflip
+Mouse: Look
+ESC: Unlock mouse"
+label_settings = SubResource("LabelSettings_n8woo")
+
+[connection signal="animation_finished" from="AnimationTree" to="." method="_on_animation_tree_animation_finished"]

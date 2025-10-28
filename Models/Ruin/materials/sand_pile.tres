@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b604evdnia1yr"]
+
+[ext_resource type="Texture2D" uid="uid://cefxoebsp0erq" path="res://Models/ruin/ruins_sand_pile_Default_Material_BaseColor.png" id="1_lxes2"]
+
+[resource]
+resource_name = "sand_pile"
+cull_mode = 2
+albedo_texture = ExtResource("1_lxes2")
+roughness = 0.552786

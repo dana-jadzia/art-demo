@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c1dsosivvr6u1"]
+
+[ext_resource type="Texture2D" uid="uid://83olp8imdsef" path="res://Models/ruin/ruins_monolith_broken_broken_monolith_2_BaseColor.png" id="1_u6axx"]
+
+[resource]
+resource_name = "broken_monolith_2"
+cull_mode = 2
+albedo_texture = ExtResource("1_u6axx")
+roughness = 0.552786

@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cb2vqc6ha3q6o"]
+
+[ext_resource type="Texture2D" uid="uid://b6qk1bgu03vd" path="res://Models/ruin/ruins_small_ruined_wall_Default_Material_BaseColor.png" id="1_yp7tw"]
+
+[resource]
+resource_name = "small_ruined_wall"
+cull_mode = 2
+albedo_texture = ExtResource("1_yp7tw")
+roughness = 0.552786

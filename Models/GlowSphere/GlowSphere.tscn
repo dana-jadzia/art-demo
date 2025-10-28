@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwundowiojo5g"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_53n27"]
+radius = 0.1
+height = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sm3a7"]
+transparency = 1
+blend_mode = 1
+depth_draw_mode = 1
+albedo_color = Color(1, 1, 1, 0.49411765)
+metallic_specular = 1.0
+roughness = 0.22
+emission_enabled = true
+emission = Color(0.19315353, 0.19315353, 0.19315353, 1)
+clearcoat_enabled = true
+clearcoat_roughness = 0.89
+subsurf_scatter_strength = 0.26
+refraction_enabled = true
+refraction_scale = -0.02
+
+[node name="GlowSphere" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_53n27")
+surface_material_override/0 = SubResource("StandardMaterial3D_sm3a7")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="MeshInstance3D"]
+light_energy = 0.2
+light_size = 0.2
+shadow_enabled = true
+distance_fade_enabled = true

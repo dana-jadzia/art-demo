@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://5eguh3si6bai"]
+
+[ext_resource type="Texture2D" uid="uid://c0ixs2cvxfdyq" path="res://Models/ruin/ruins_right_of_door_wall_Default_Material_BaseColor.png" id="1_d8tjk"]
+
+[resource]
+resource_name = "right_of_door_wa__"
+cull_mode = 2
+albedo_texture = ExtResource("1_d8tjk")
+roughness = 0.552786

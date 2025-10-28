@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dmideo0sfio3t"]
+
+[ext_resource type="Texture2D" uid="uid://dkjh3gwb7v28y" path="res://Models/ruin/ruins_table_support_standardSurface1_BaseColor.png" id="1_j7xur"]
+
+[resource]
+resource_name = "table_support"
+cull_mode = 2
+albedo_texture = ExtResource("1_j7xur")
+roughness = 0.552786

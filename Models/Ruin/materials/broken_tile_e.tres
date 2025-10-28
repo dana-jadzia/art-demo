@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://rveyv6ofgt7q"]
+
+[ext_resource type="Texture2D" uid="uid://dd0qxfjnim3g3" path="res://Models/ruin/ruins_broken_tile_e_standardSurface1_BaseColor.png" id="1_wa0hu"]
+
+[resource]
+resource_name = "broken_tile_e"
+cull_mode = 2
+albedo_texture = ExtResource("1_wa0hu")
+roughness = 0.552786

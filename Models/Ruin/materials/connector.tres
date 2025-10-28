@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dfe0csvajh2lq"]
+
+[ext_resource type="Texture2D" uid="uid://y0ksnbqwtee1" path="res://Models/ruin/ruins_connector_standardSurface1_BaseColor.png" id="1_4eaq7"]
+
+[resource]
+resource_name = "connector"
+cull_mode = 2
+albedo_texture = ExtResource("1_4eaq7")
+roughness = 0.552786

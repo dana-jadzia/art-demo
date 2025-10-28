@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ds5k3bi2oiubu"]
+
+[ext_resource type="Texture2D" uid="uid://vye87crm8qly" path="res://Models/ruin/ruins_broken_long_wall_standardSurface1_BaseColor.png" id="1_rjhkr"]
+
+[resource]
+resource_name = "broken_long_wall"
+cull_mode = 2
+albedo_texture = ExtResource("1_rjhkr")
+roughness = 0.552786

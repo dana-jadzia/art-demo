@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dgm7wgxsntb30"]
+
+[ext_resource type="Texture2D" uid="uid://fdx3n0ugb6bh" path="res://Models/ruin/ruins_corner_column_full_standardSurface1_BaseColor.png" id="1_wyrbj"]
+
+[resource]
+resource_name = "corner_column_full"
+cull_mode = 2
+albedo_texture = ExtResource("1_wyrbj")
+roughness = 0.552786

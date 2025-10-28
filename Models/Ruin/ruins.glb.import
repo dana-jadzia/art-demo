@@ -1,0 +1,220 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://u2y6n7krfa8r"
+path="res://.godot/imported/ruins.glb-68151cd3762dc2d9cf44ea66b0a1878e.scn"
+
+[deps]
+
+source_file="res://Models/Ruin/ruins.glb"
+dest_files=["res://.godot/imported/ruins.glb-68151cd3762dc2d9cf44ea66b0a1878e.scn"]
+
+[params]
+
+nodes/root_type="StaticBody3D"
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"Monolith_Whole": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/Monolith_Whole.tres",
+"use_external/path": "uid://ca6dtg5ohlwbi"
+},
+"above_door_wall": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/above_door_wall.tres",
+"use_external/path": "uid://dsnqhqrx3snr0"
+},
+"broken_long_wall": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/broken_long_wall.tres",
+"use_external/path": "uid://ds5k3bi2oiubu"
+},
+"broken_monolith_2": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/broken_monolith_2.tres",
+"use_external/path": "uid://c1dsosivvr6u1"
+},
+"broken_panel_1": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/broken_panel_1.tres",
+"use_external/path": "uid://b6kda8ja8t7cw"
+},
+"broken_panel_2": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/broken_panel_2.tres",
+"use_external/path": "uid://dgwjw6s6uke81"
+},
+"broken_tile_a": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/broken_tile_a.tres",
+"use_external/path": "uid://ctth0x7c2je5e"
+},
+"broken_tile_b": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/broken_tile_b.tres",
+"use_external/path": "uid://bfibxqrfsn2nj"
+},
+"broken_tile_c": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/broken_tile_c.tres",
+"use_external/path": "uid://baut14xp7xmni"
+},
+"broken_tile_d": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/broken_tile_d.tres",
+"use_external/path": "uid://b4s1axw87u8jl"
+},
+"broken_tile_e": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/broken_tile_e.tres",
+"use_external/path": "uid://rveyv6ofgt7q"
+},
+"combined_tiles": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/combined_tiles.tres",
+"use_external/path": "uid://cadyanulkicoh"
+},
+"connector": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/connector.tres",
+"use_external/path": "uid://dfe0csvajh2lq"
+},
+"corner_column_broken": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/corner_column_broken.tres",
+"use_external/path": "uid://cunmoy5u8e242"
+},
+"corner_column_full": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/corner_column_full.tres",
+"use_external/path": "uid://dgm7wgxsntb30"
+},
+"door_columns": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/door_columns.tres",
+"use_external/path": "uid://dkmuo5b52ohtd"
+},
+"ladder_side": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/ladder_side.tres",
+"use_external/path": "uid://bhmloefkwjw2t"
+},
+"ladder_step": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/ladder_step.tres",
+"use_external/path": "uid://cgb62lqbl2ns3"
+},
+"left_of_door_wall": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/left_of_door_wall.tres",
+"use_external/path": "uid://bsahxjar0juf3"
+},
+"lintel1": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/lintel1.tres",
+"use_external/path": "uid://ca185vkr21d3l"
+},
+"lintel_caps": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/lintel_caps.tres",
+"use_external/path": "uid://dtrvp2dkuwet6"
+},
+"long_wall_broken_panel": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/long_wall_broken_panel.tres",
+"use_external/path": "uid://bleqor6y1iwbo"
+},
+"long_wall_broken_panel_2": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/long_wall_broken_panel_2.tres",
+"use_external/path": "uid://f3qxaq6ht7gb"
+},
+"plinth": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/plinth.tres",
+"use_external/path": "uid://blrjv64rhvjn7"
+},
+"right_of_door_wa__": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/right_of_door_wa__.tres",
+"use_external/path": "uid://5eguh3si6bai"
+},
+"ruin_topper": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/ruin_topper.tres",
+"use_external/path": "uid://bnpgsybtm4wad"
+},
+"sand_pile": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/sand_pile.tres",
+"use_external/path": "uid://b604evdnia1yr"
+},
+"sand_terrain": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/sand_terrain.tres",
+"use_external/path": "uid://p1mcvddi3w23"
+},
+"short_wall_broken_panel": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/short_wall_broken_panel.tres",
+"use_external/path": "uid://daap4u3mmn8ro"
+},
+"small_ruined_wall": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/small_ruined_wall.tres",
+"use_external/path": "uid://cb2vqc6ha3q6o"
+},
+"table_leg": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/table_leg.tres",
+"use_external/path": "uid://cb2oxctrv2xqp"
+},
+"table_support": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/table_support.tres",
+"use_external/path": "uid://dmideo0sfio3t"
+},
+"wall_top_floor": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/wall_top_floor.tres",
+"use_external/path": "uid://d0hhfaewb41g2"
+},
+"whole_tiles": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/whole_tiles.tres",
+"use_external/path": "uid://lcrexlapgwae"
+},
+"woodtable_planks": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ruin/materials/woodtable_planks.tres",
+"use_external/path": "uid://c1daa0uisowh0"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c1daa0uisowh0"]
+
+[ext_resource type="Texture2D" uid="uid://bd1n57ltmg611" path="res://Models/ruin/ruins_table_standardSurface1_BaseColor.png" id="1_at6lt"]
+
+[resource]
+resource_name = "woodtable_planks"
+cull_mode = 2
+albedo_texture = ExtResource("1_at6lt")
+roughness = 0.552786
