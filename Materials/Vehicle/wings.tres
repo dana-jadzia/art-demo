@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://oi00xj5ltsjn"]
+
+[ext_resource type="Texture2D" uid="uid://d3gq3omsga33u" path="res://Models/Vehicle/talon8_TT_checker_512x512_UV_GRID_BaseColor.png" id="1_jif7d"]
+[ext_resource type="Texture2D" uid="uid://der1lmlkthg85" path="res://Models/Vehicle/talon8_TT_checker_512x512_UV_GRID_Normal.png" id="2_2dogr"]
+
+[resource]
+resource_name = "wings"
+cull_mode = 2
+albedo_texture = ExtResource("1_jif7d")
+normal_enabled = true
+normal_texture = ExtResource("2_2dogr")

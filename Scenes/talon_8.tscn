@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c06xsyfqxef51"]
+[gd_scene load_steps=10 format=3 uid="uid://jb8841ys0xbe"]
 
 [ext_resource type="PackedScene" uid="uid://coa7gp07rgrhn" path="res://Models/Vehicle/talon8.glb" id="1_lrdw2"]
 
@@ -61,6 +61,9 @@ shape = SubResource("ConcavePolygonShape3D_rm00t")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="outer-shell_low/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_wmvqv")
 
+[node name="main-engine-body_low" parent="." index="5"]
+gi_mode = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="main-engine-body_low" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="main-engine-body_low/StaticBody3D" index="0"]
@@ -72,18 +75,23 @@ shape = SubResource("ConcavePolygonShape3D_ussvb")
 shape = SubResource("ConcavePolygonShape3D_o5gb8")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." index="7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004897356, 0.4743687, -1.4095802)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004897356, 0.46690816, -1.1613659)
 light_color = Color(0.77020276, 0.045184717, 9.62615e-08, 1)
-light_energy = 0.189
-light_size = 0.612
+light_size = 0.3
 shadow_enabled = true
-omni_range = 1.0
+shadow_reverse_cull_face = true
+distance_fade_begin = 1.0
+distance_fade_shadow = 2.0
+distance_fade_length = 1.0
+omni_range = 0.69337434
+omni_attenuation = 2.0
 omni_shadow_mode = 0
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="." index="8"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004897356, 0.29294705, 1.177578)
+[node name="Spotlight3D" type="SpotLight3D" parent="." index="8"]
+transform = Transform3D(1, 0, 0, 0, -0.007714239, 0.99997026, 0, -0.99997026, -0.007714239, 0.08484948, 0.39553195, 1.2251408)
 light_color = Color(0.7524351, 0.34920838, 0.034724798, 1)
-light_energy = 0.189
+light_energy = 0.7
 light_size = 1.5
 shadow_enabled = true
-omni_range = 1.0
+spot_range = 1.144
+spot_angle = 71.65027

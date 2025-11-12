@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://bqq416ai1xldi"]
+
+[ext_resource type="Texture2D" uid="uid://kquqms25ea8p" path="res://Models/Vehicle/talon8_DefaultMaterial_BaseColor.png" id="1_ggaim"]
+[ext_resource type="Texture2D" uid="uid://c4bqr3c3f54nj" path="res://Models/Vehicle/talon8_DefaultMaterial_Normal.png" id="2_g8a3b"]
+
+[resource]
+resource_name = "seat"
+cull_mode = 2
+albedo_texture = ExtResource("1_ggaim")
+normal_enabled = true
+normal_texture = ExtResource("2_g8a3b")

@@ -2,10 +2,10 @@
 
 [ext_resource type="ArrayMesh" uid="uid://dv1vb5fiqp0kr" path="res://Models/Terrain/Terrain.obj" id="1_bo1nx"]
 [ext_resource type="Material" uid="uid://kl1627w72s0c" path="res://Models/Terrain/terrain-material.tres" id="2_jjvhh"]
-[ext_resource type="PackedScene" uid="uid://co55iij6ld4ej" path="res://Models/Ruin/ruins.tscn" id="3_8gbba"]
-[ext_resource type="PackedScene" uid="uid://vxtya6hwbh7a" path="res://Models/Character/character.tscn" id="3_kry3j"]
-[ext_resource type="PackedScene" uid="uid://cwundowiojo5g" path="res://Models/GlowSphere/GlowSphere.tscn" id="4_jjvhh"]
-[ext_resource type="PackedScene" uid="uid://c06xsyfqxef51" path="res://Models/Vehicle/talon_8.tscn" id="6_21xkr"]
+[ext_resource type="PackedScene" uid="uid://co55iij6ld4ej" path="res://Scenes/ruins.tscn" id="3_8gbba"]
+[ext_resource type="PackedScene" uid="uid://vxtya6hwbh7a" path="res://Scenes/character.tscn" id="3_kry3j"]
+[ext_resource type="PackedScene" uid="uid://cwundowiojo5g" path="res://Scenes/GlowSphere.tscn" id="4_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://jb8841ys0xbe" path="res://Scenes/talon_8.tscn" id="7_6bp64"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kry3j"]
 sky_top_color = Color(0.035897218, 0.018230498, 0.058131307, 1)
@@ -47,6 +47,7 @@ sky_mode = 1
 [node name="ground" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ground"]
+visible = false
 shape = SubResource("ConcavePolygonShape3D_8gbba")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ground"]
@@ -65,7 +66,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5196295, 0.049145937, -5.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.687893, 0.836915, -1.425229)
 
 [node name="character" parent="." instance=ExtResource("3_kry3j")]
-transform = Transform3D(0.90979475, 0, -0.4150585, 0, 1, 0, 0.4150585, 0, 0.90979475, -13.454065, 0.005197525, 4.185292)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.687932, 0.005197525, 5.2298956)
 
-[node name="talon8" parent="." instance=ExtResource("6_21xkr")]
-transform = Transform3D(-0.9205594, 0, -0.39060253, 0, 1, 0, 0.39060253, 0, -0.9205594, -8.8045, 0.15350485, 1.8643405)
+[node name="talon8" parent="." instance=ExtResource("7_6bp64")]
+transform = Transform3D(-0.9743622, 0, -0.22498503, 0, 1, 0, 0.22498503, 0, -0.9743622, -7.9392643, 0.1211579, 2.6104898)

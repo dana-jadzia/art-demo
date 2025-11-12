@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://dt8nad0behmo"]
+
+[ext_resource type="ArrayMesh" uid="uid://cpks3hxxpvxiu" path="res://Models/Vehicle/talon8_Cube_015.res" id="1_lspp6"]
+[ext_resource type="ArrayMesh" uid="uid://ooxt7j0h5rvr" path="res://Models/Vehicle/talon8_Cube_021.res" id="2_jo2b2"]
+[ext_resource type="ArrayMesh" uid="uid://d35a2gglfkh6w" path="res://Models/Vehicle/talon8_Cube_023.res" id="3_qj702"]
+[ext_resource type="ArrayMesh" uid="uid://cuufye0ryv0fi" path="res://Models/Vehicle/talon8_Cube_027.res" id="4_ub6jl"]
+[ext_resource type="ArrayMesh" uid="uid://cmci6pdoxqgpi" path="res://Models/Vehicle/talon8_Cube_038.res" id="5_xm6f5"]
+
+[node name="Vehicle" type="Node3D"]
+
+[node name="Talon8Cube015" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1920929e-07, 0)
+mesh = ExtResource("1_lspp6")
+
+[node name="Talon8Cube021" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1920929e-07, 0)
+mesh = ExtResource("2_jo2b2")
+
+[node name="Talon8Cube023" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1920929e-07, 0)
+mesh = ExtResource("3_qj702")
+
+[node name="Talon8Cube027" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1920929e-07, 0)
+mesh = ExtResource("4_ub6jl")
+
+[node name="Talon8Cube038" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1920929e-07, 0)
+mesh = ExtResource("5_xm6f5")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004897356, 0.4743687, -1.4095802)
+light_color = Color(0.77020276, 0.045184717, 9.62615e-08, 1)
+light_energy = 0.189
+light_size = 0.612
+shadow_enabled = true
+omni_range = 1.0
+omni_shadow_mode = 0
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004897356, 0.29294705, 1.177578)
+light_color = Color(0.7524351, 0.34920838, 0.034724798, 1)
+light_energy = 0.189
+light_size = 1.5
+shadow_enabled = true
+omni_range = 1.0

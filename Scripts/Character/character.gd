@@ -6,24 +6,24 @@ extends CharacterBody3D
 @onready var anim_tree = $AnimationTree
 @onready var anim_player = $AnimationPlayer
 
-@export var is_flipping = false
+@export var is_crouching = false
 
-const SPEED = 2.0
+const SPEED = 1.8
 const JUMP_VELOCITY = 4.5
 const LERP_VAL = 0.15
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	
-
 
 func _unhandled_input(event: InputEvent) -> void:
 	
-	if Input.is_action_just_pressed("flip"):
-		is_flipping = velocity.length() < 0.2
+	if Input.is_action_just_pressed("flip") && !is_crouching:
+		if velocity.length() < 0.2:
+			is_crouching = true
+			var statemachine = anim_tree["parameters/playback"]
+			statemachine.travel("crouch_examine")
 	
 	if Input.is_action_just_pressed("quit"):
-		#get_tree().quit()
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		else:
@@ -35,7 +35,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		spring_arm.rotation.x = clamp(spring_arm.rotation.x, -PI/4, PI/3)
 
 func _physics_process(delta: float) -> void:
-	if is_flipping:
+	if is_crouching:
 		return
 		
 	# Add the gravity.
@@ -59,11 +59,9 @@ func _physics_process(delta: float) -> void:
 		velocity.x = lerp(velocity.x, 0.0, LERP_VAL)
 		velocity.z = lerp(velocity.z, 0.0, LERP_VAL)
 
-	#anim_tree.set("parameters/BlendSpace1D/blend_position", velocity.length()/SPEED)
-	
 	move_and_slide()
 
 
 func _on_animation_tree_animation_finished(anim_name: StringName) -> void:
-	if anim_name == "backflip_action":
-		is_flipping = false;
+	if anim_name == "crouch_examine":
+		is_crouching = false;
